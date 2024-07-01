@@ -1,0 +1,220 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список фруктів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #c66;
+            padding: 10px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        .item {
+            background-color: #c94c4c;
+            margin: 5px 0;
+            padding: 5px;
+            color: white;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+        .number {
+            background-color: #a03b3b;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"><div class="number">1.</div>Apple</div>
+        <div class="item"><div class="number">2.</div>Orange</div>
+        <div class="item"><div class="number">3.</div>Pineapple</div>
+        <div class="item"><div class="number">4.</div>Pear</div>
+        <div class="item"><div class="number">5.</div>Cherry</div>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #fff;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .task-list li {
+            background-color: #b0e0e6;
+            padding: 10px;
+            border-bottom: 1px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .task-list li:nth-child(even) {
+            background-color: #e0ffff;
+        }
+        .task-list li.completed .task-text {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .task-list .task {
+            display: flex;
+            align-items: center;
+        }
+        .task-list .task .checkbox {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border: 2px solid #000;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+        }
+        .task-list .task .checkbox.checked {
+            background-color: #000;
+            color: #fff;
+        }
+        .task-list .remove {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>My To Do List</h2>
+        </div>
+        <ul class="task-list">
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Hit the gym</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li class="completed">
+                <div class="task">
+                    <div class="checkbox checked">✔</div>
+                    <span class="task-text">Pay bills</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Meet John</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Buy eggs</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li class="completed">
+                <div class="task">
+                    <div class="checkbox checked">✔</div>
+                    <span class="task-text">Read a book</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Organize office</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Eat dinner</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Buy apples</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Meet George</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Feed the cat</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li class="completed">
+                <div class="task">
+                    <div class="checkbox checked">✔</div>
+                    <span class="task-text">Write a letter</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+            <li>
+                <div class="task">
+                    <div class="checkbox"></div>
+                    <span class="task-text">Run 1 km</span>
+                </div>
+                <span class="remove">×</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
